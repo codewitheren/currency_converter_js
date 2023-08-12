@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+    border: 0.5px solid #afafaf;
+    max-width: 80%;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input{
+    font-size: 10px;
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+option {
+    font-size: 14px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    margin: 0px 5px;
+    margin-bottom: 20px;
+    padding: auto;
+    font-size: 15px;
+    width: 40%;
+}
+
+select {
+    padding: 5px;
+}
+
+p{
+    color: rgb(112, 112, 112)
+}
+
+.icon{
+    font-size: 20px;
+}
+
+@media (max-width: 1190px) {
+    .icon {
+      display: none; /* Ikonu gizle */
+    }
+}

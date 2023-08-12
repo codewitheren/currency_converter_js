@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Para Birimi Seçimi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Para Birimi Çevirici</h3>
+        <br>
+        <div class="input">
+            <div class="first">
+                <input id="first_value" type="number" value="1" min="0">
+                <select id="first_currency">
+                    <option value="try">Türk Lirası (₺)</option>
+                    <option value="usd">Amerikan Doları ($)</option>
+                    <option value="eur">Euro (€)</option>
+                    <option value="jpy">Japon Yeni (¥)</option>
+                    <option value="gbp">İngiliz Sterlini (£)</option>
+                    <option value="aud">Avustralya Doları (A$)</option>
+                    <option value="cad">Kanada Doları (C$)</option>
+                    <option value="chf">İsviçre Frangı (CHF)</option>
+                    <option value="cny">Çin Yuanı (¥)</option>
+                    <option value="sek">İsveç Kronu (SEK)</option>
+                    <option value="nzd">Yeni Zelanda Doları (NZ$)</option>
+                    <option value="bgn">Bulgar Levası (BGN)</option>
+                    <option value="brl">Brezilya Reali (BRL)</option>
+                    <option value="czk">Çek Korunası (CZK)</option>
+                    <option value="dkk">Danimarka Kronu (DKK)</option>
+                    <option value="hkd">Hong Kong Doları (HKD)</option>
+                    <option value="hrk">Hırvat Kunası (HRK)</option>
+                    <option value="huf">Macar Forinti (HUF)</option>
+                    <option value="idr">Endonezya Rupisi (IDR)</option>
+                    <option value="ils">İsrail Şekeli (ILS)</option>
+                    <option value="inr">Hindistan Rupisi (INR)</option>
+                    <option value="isk">İzlanda Kronası (ISK)</option>
+                    <option value="krw">Güney Kore Wonu (KRW)</option>
+                    <option value="mxn">Meksika Pezosu (MXN)</option>
+                    <option value="myr">Malezya Ringgiti (MYR)</option>
+                    <option value="nok">Norveç Kronu (NOK)</option>
+                    <option value="php">Filipinler Pesosu (PHP)</option>
+                    <option value="pln">Polonya Zlotisi (PLN)</option>
+                    <option value="ron">Romen Leyi (RON)</option>
+                    <option value="rub">Rus Rublesi (RUB)</option>
+                    <option value="sgd">Singapur Doları (SGD)</option>
+                    <option value="thb">Tayland Bahtı (THB)</option>
+                    <option value="zar">Güney Afrika Randı (ZAR)</option>
+                </select>           
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="second">
+                <input id="second_value" type="number" disabled>
+                <select id="second_currency">
+                    <option value="try">Türk Lirası (₺)</option>
+                    <option value="usd">Amerikan Doları ($)</option>
+                    <option value="eur">Euro (€)</option>
+                    <option value="jpy">Japon Yeni (¥)</option>
+                    <option value="gbp">İngiliz Sterlini (£)</option>
+                    <option value="aud">Avustralya Doları (A$)</option>
+                    <option value="cad">Kanada Doları (C$)</option>
+                    <option value="chf">İsviçre Frangı (CHF)</option>
+                    <option value="cny">Çin Yuanı (¥)</option>
+                    <option value="sek">İsveç Kronu (SEK)</option>
+                    <option value="nzd">Yeni Zelanda Doları (NZ$)</option>
+                    <option value="bgn">Bulgar Levası (BGN)</option>
+                    <option value="brl">Brezilya Reali (BRL)</option>
+                    <option value="czk">Çek Korunası (CZK)</option>
+                    <option value="dkk">Danimarka Kronu (DKK)</option>
+                    <option value="hkd">Hong Kong Doları (HKD)</option>
+                    <option value="hrk">Hırvat Kunası (HRK)</option>
+                    <option value="huf">Macar Forinti (HUF)</option>
+                    <option value="idr">Endonezya Rupisi (IDR)</option>
+                    <option value="ils">İsrail Şekeli (ILS)</option>
+                    <option value="inr">Hindistan Rupisi (INR)</option>
+                    <option value="isk">İzlanda Kronası (ISK)</option>
+                    <option value="krw">Güney Kore Wonu (KRW)</option>
+                    <option value="mxn">Meksika Pezosu (MXN)</option>
+                    <option value="myr">Malezya Ringgiti (MYR)</option>
+                    <option value="nok">Norveç Kronu (NOK)</option>
+                    <option value="php">Filipinler Pesosu (PHP)</option>
+                    <option value="pln">Polonya Zlotisi (PLN)</option>
+                    <option value="ron">Romen Leyi (RON)</option>
+                    <option value="rub">Rus Rublesi (RUB)</option>
+                    <option value="sgd">Singapur Doları (SGD)</option>
+                    <option value="thb">Tayland Bahtı (THB)</option>
+                    <option value="zar">Güney Afrika Randı (ZAR)</option>
+                </select>
+            </div>
+        </div>        
+        <div class="button">
+            <button type="button" class="calculate_button btn btn-success">Hesapla</button>
+            <button type="button" class="clear_button btn btn-danger">Temizle</button>
+        </div>
+        <p>by muerdoga</p>
+    </div>
+    <script src="currency.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
